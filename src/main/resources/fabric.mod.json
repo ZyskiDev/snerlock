@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "snerlock",
+	"version": "${version}",
+	"name": "Snerlock",
+	"description": "",
+	"authors": [
+		"Zyski"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/snerlock/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"social.imnotvery.snerlock.Snerlock"
+		],
+		"client": [
+			"social.imnotvery.snerlock.client.SnerlockClient"
+		]
+	},
+	"mixins": [
+		"snerlock.mixins.json",
+		{
+			"config": "snerlock.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "social.imnotvery.snerlock.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"GizmoMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
